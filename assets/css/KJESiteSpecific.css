@@ -1,0 +1,362 @@
+body.calculator-indiv {
+  font-family: "Poppins", sans-serif !important; }
+  body.calculator-indiv table, body.calculator-indiv td, body.calculator-indiv th, body.calculator-indiv ul, body.calculator-indiv ol, body.calculator-indiv dd, body.calculator-indiv dl, body.calculator-indiv p, body.calculator-indiv br, body.calculator-indiv h1, body.calculator-indiv dt {
+    font-family: "Poppins", sans-serif !important; }
+
+.KJEWait {
+  background-image: none !important;
+  border: 0.3125rem solid #f3f3f3 !important;
+  border-top: 0.3125rem solid #333333 !important;
+  border-radius: 50% !important;
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  animation: spin 1.5s linear infinite; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+body {
+  margin: 0; }
+
+#KJESplash {
+  display: none; }
+
+.KJEWrapper {
+  background: none;
+  padding: 0;
+  margin: 0; }
+
+#KJEAllContent {
+  font-size: 0.875rem;
+  font-family: "Poppins", sans-serif;
+  background: transparent;
+  color: #5e5e5e; }
+  #KJEAllContent table, #KJEAllContent td, #KJEAllContent th, #KJEAllContent ul, #KJEAllContent ol, #KJEAllContent dd, #KJEAllContent dl, #KJEAllContent p, #KJEAllContent br, #KJEAllContent h1, #KJEAllContent dt {
+    font-family: "Poppins", sans-serif !important;
+    font-size: inherit !important; }
+
+.KJEFontHeading {
+  color: #5e5e5e;
+  font-family: "Poppins", sans-serif !important; }
+
+.KJEError {
+  color: #dc3545; }
+
+.KJETitle {
+  font-size: 1.1875rem;
+  text-align: center;
+  background-image: none; }
+
+.KJECalculatorTable {
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding-top: 2rem; }
+
+#KJEReport {
+  padding-top: 2rem; }
+
+.KJECalculator {
+  margin-top: .5rem; }
+
+.KJEInputContainer .KJEHelp:hover {
+  color: #5e5e5e; }
+
+.KJEDrop, .KJEDroppee {
+  background: none !important; }
+
+.KJEReportTitle {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0; }
+
+.KJEReportTitleBlock {
+  text-align: center;
+  padding: .625rem;
+  margin-top: .3125rem;
+  margin: .625rem;
+  border-width: .0625rem;
+  border-style: solid;
+  border-color: black; }
+
+.KJEWidthConstraint {
+  max-width: 56.25rem;
+  text-align: left;
+  margin: auto;
+  padding: .9375rem;
+  background: none; }
+
+.KJEWidthConstraint > h1 {
+  display: none; }
+
+button.KJECloseButton {
+  background: #5e5e5e; }
+
+button.KJEDefinitionIcon:active, button.KJEDefinitionIcon:focus, button.KJEDefinitionIcon:hover,
+button.KJECloseButton:active, button.KJECloseButton:focus, button.KJECloseButton:hover {
+  color: #5e5e5e; }
+
+#KJEGuiDataPoint, div.KJEGuiDefnPopup {
+  border: 0.0625rem solid #333333; }
+
+div.KJEGuiDefnPopup:before {
+  border-color: #333333 transparent; }
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: .83125rem 0; }
+
+.KJEInputContainer input[type=range]::-webkit-slider-thumb {
+  height: .875rem;
+  width: .875rem;
+  border-left: .375rem solid transparent;
+  border-right: .375rem solid transparent;
+  border-bottom: 0.75rem solid #333333;
+  -webkit-box-shadow: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -.65625rem; }
+
+.KJEInputContainer input[type=range]:active::-webkit-slider-thumb {
+  border-left: .375rem solid transparent;
+  border-right: .375rem solid transparent;
+  border-bottom: 0.75rem solid rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: none; }
+
+.KJEInputContainer input[type=range]::-moz-range-thumb {
+  box-shadow: none;
+  height: .875rem;
+  width: .875rem;
+  border-left: .375rem solid transparent;
+  border-right: .375rem solid transparent;
+  border-bottom: 0.75rem solid #333333;
+  cursor: pointer; }
+
+.KJEInputContainer input[type=range]:active::-moz-range-thumb {
+  border-left: .375rem solid transparent;
+  border-right: .375rem solid transparent;
+  border-bottom: 0.75rem solid rgba(0, 0, 0, 0.8);
+  box-shadow: none; }
+
+.KJEInputContainer input[type=range]::-ms-thumb {
+  box-shadow: none;
+  height: .125rem;
+  width: .125rem;
+  border-left: .375rem solid transparent;
+  border-right: .375rem solid transparent;
+  border-bottom: 0.75rem solid #333333;
+  border-top: 0;
+  cursor: pointer; }
+
+.KJEInputContainer input[type=range]:active::-ms-thumb {
+  border-left: .375rem solid transparent;
+  border-right: .375rem solid transparent;
+  border-bottom: 0.75rem solid rgba(0, 0, 0, 0.8);
+  box-shadow: none; }
+
+#KJEFixed.KJEButtonIsFixed {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  background-color: transparent;
+  border: 0; }
+
+/*Buttons*/
+#KJECommandButtons {
+  z-index: 10;
+  width: auto; }
+
+@media (max-width: 47.9375rem) {
+  #KJECommandButtons input {
+    min-width: 50%;
+    text-align: center;
+    margin: 0 auto; } }
+
+.KJECommandButton {
+  display: block;
+  margin: 0 0.3125rem; }
+
+button.KJEDefinitionIcon {
+  background: #1a456c; }
+
+/*Override javascript*/
+#KJE-D-INPUTS, #KJE-E-INPUTS {
+  background: none !important; }
+
+.KJESubTitle {
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: normal; }
+
+.KJEToggleTitle {
+  font-size: 1.125rem; }
+
+.KJETitle .KJEFooter {
+  display: none; }
+
+.KJEGraphIcon {
+  background-repeat: no-repeat;
+  background-position: top left;
+  /*background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAASNJREFUeNqUU7ENwkAMTCIauowATMAGwASICUJqCsgEjIBSUAMTBCYIbBAWgGxAOlrO0b1kmSQIS37/v+2z3/b7Xge996MdxBic8ErORX/1SNp8gg6wAUTIY0QWCqlrJL8BaAkxV2AleMr9FezAKvAF2R5bAQF2gFh6/9ERoPEX4A8wXcNOUB9A8rScxS/4lLF6cu1AqQNWtA+V76yHZcuL2NXDBPEaMq+dYV+pussLt5LhS4oN5aKhy08eZ5Q55RD2pbHPpHkBU77boiiHM/YSUDp8NjpNghEGrMWkZQ6Fbur6ZnSaBKMSwFRShdFGgUnWmctQObl9Rhtnv+GsprbLpRnk2A6uaoAe9IFrlG8MI/U7UoAVLd9Sgq/Vrzm5wB8BBgBGcHZ0qxMuUQAAAABJRU5ErkJggg==);*/ }
+
+.KJEInputIcon {
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-image: none;
+  /* Sets an image next to the [+] or [-]
+    /*background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHdJREFUeNpiYCACfJ+qVADEATA+IxEa5gOpBCg3kTP73gJGEjTAQCATiRpAQIGRRA0LgM5LZCRVA0ZAEKMBRROxGkAAOSAciNGArikQiA8Q0gBzlgAQr4eyHYD4PtSpeCMwAYj/wzQSA1hAkQVKHkC8gVhNAAEGAMMTPBsVMAuAAAAAAElFTkSuQmCC);*/ }
+
+#KJE-E-INPUTS input {
+  border-radius: 0.375rem;
+  color: #5e5e5e; }
+
+.KJEInputContainer .KJEArrow {
+  width: .625rem;
+  height: .625rem;
+  background-repeat: no-repeat;
+  background: #333333;
+  /*Change color of the slider dot*/
+  border-radius: 0.375rem;
+  top: .8125rem !important;
+  border: none; }
+
+.KJEInputContainer .KJEArrow.active {
+  /*background: #f7941e; Change color of the slider dot when active*/
+  cursor: pointer;
+  border: none; }
+
+.KJEInputContainer:hover {
+  background-color: #fff; }
+
+.KJEDropper:hover {
+  background-color: #fff; }
+
+.KJEGraphDropper:hover {
+  background-color: #dee2e6; }
+
+.KJEInputContainer .help:hover {
+  color: #5e5e5e; }
+
+/*Report tables*/
+.KJEDefinitions .KJEReportTableDiv,
+.KJEReportTableDiv, .KJEScheduleDiv {
+  border: none;
+  box-shadow: none; }
+
+caption.KJEHeaderRow {
+  background-color: #ccc;
+  color: #5e5e5e;
+  /*Overwrite KJE.css*/ }
+
+table.KJEReportTable, table.KJEScheduleTable {
+  background: none; }
+
+table.KJEReportTable tr.KJEHeaderRow {
+  /*background-color: #fbb040; Change table header background color*/
+  background: none;
+  text-align: center;
+  border: none; }
+
+table.KJEReportTable tr.KJEHeaderRow:hover, table.KJECalcTable tr.KJEHeaderRow:hover, table.KJEScheduleTable tr.KJEScheduleHeaderRow:hover,
+table.KJEReportTable th.KJEHeading:hover, table.KJECalcTable th.KJEHeading:hover, table.KJEScheduleTable th:hover {
+  background-color: #5e5e5e;
+  /*Overwrite KJE.css*/
+  color: #fff; }
+
+table.KJEReportTable tr.KJEFooterRow {
+  background-color: #ccc;
+  text-align: right;
+  border: none; }
+
+table.KJEReportTable tr.KJEFooterRow:hover {
+  background-color: inherit;
+  /*Row color hover*/
+  color: #5e5e5e; }
+
+table.KJEReportTable tr.KJEEvenRow {
+  background-color: #eee;
+  text-align: right; }
+
+table.KJEReportTable tr.KJEEvenRow:hover {
+  background-color: #eee;
+  /*Row color hover*/
+  color: #5e5e5e; }
+
+table.KJEReportTable tr.KJEOddRow {
+  background-color: #fff;
+  text-align: right; }
+
+table.KJEReportTable tr.KJEOddRow:hover {
+  color: #5e5e5e;
+  background: none; }
+
+table.KJEReportTable td.KJECell:hover {
+  color: #5e5e5e;
+  /*background-color: #f7941e;  Change cell hover color */
+  background: none; }
+
+table.KJEReportTable .KJELabel:hover {
+  color: #5e5e5e;
+  /*background-color: #f7941e;  Change cell hover color */
+  background: none; }
+
+table.KJEReportTable td.KJECellStrong:hover {
+  color: #5e5e5e;
+  /*background-color: #f7941e;  Change cell hover color */
+  background: none; }
+
+table.KJEReportTable td.KJECellSpecial:hover {
+  color: #5e5e5e;
+  /* background-color: #f7941e; Change cell hover color */
+  background: none; }
+
+/*
+Rows and Cells used in the schedule table
+*/
+table.KJEScheduleTable tr.KJEScheduleHeaderRow {
+  /*background-color: #fbb040; Header background color*/
+  background: none;
+  border-color: #ccc;
+  text-align: right;
+  border: none; }
+
+table.KJEScheduleTable th {
+  background-color: #ccc;
+  border: none; }
+
+table.KJEScheduleTable tr.KJEScheduleEvenRow {
+  background-color: inherit;
+  text-align: right;
+  border: none; }
+
+table.KJEScheduleTable tr.KJEScheduleEvenRow:hover {
+  /*background-color: #f9bd6e; Change row hover color*/
+  background-color: inherit; }
+
+table.KJEScheduleTable tr.KJEScheduleOddRow {
+  background-color: inherit;
+  text-align: right; }
+
+table.KJEScheduleTable tr.KJEScheduleOddRow:hover {
+  /*background-color: #f9bd6e;  Change row hover color*/
+  background: none; }
+
+table.KJEScheduleTable td.KJEScheduleCell:hover {
+  color: #5e5e5e;
+  background-color: inherit; }
+
+/* Graph */
+#KJE-C-GRAPH1 .KJEGraphDropper:hover {
+  background: #f7f7f7;
+  /* This should match the 2nd color in the color list of the KJESiteSpecific.js*/ }
+
+.KJEToggleIcon {
+  background: none;
+  /* Graph Icon */ }
